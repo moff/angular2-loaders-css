@@ -6,16 +6,19 @@ This repository contains Angular 2 component that implements Loaders.css spinner
 
 <a href="https://connoratherton.com/loaders" target_='blank'>Check out the demo of Loaders.css</a>
 
-### Requirements
+
+## Requirements
 - [NPM](https://npmjs.org/) - Node package manager
 
-### Installation
+
+## Installation
 
 Just run `npm install angular2-loaders-css --save`
 
 Make sure you have [Loaders.css](https://github.com/ConnorAtherton/loaders.css) installed and its CSS is linked.
 
-### Usage
+
+## Usage
 
 Import `LoadersCssComponent` component and use it as a directive, e.g.: 
 
@@ -73,6 +76,6 @@ Also you can pass loaderClass-attribute and specify CSS class for a loader if yo
 ```
 
 
-### License
+## License
 
 The repository code is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
