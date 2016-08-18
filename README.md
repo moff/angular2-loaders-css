@@ -1,5 +1,7 @@
 # Angular 2 Loaders.css spinners
 
+![alt tag](http://i.imgur.com/6TCsrFV.png)
+
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](http://opensource.org/licenses/MIT)
 
 This repository contains Angular 2 component that implements Loaders.css spinners.
