@@ -15,9 +15,16 @@ This repository contains Angular 2 component that implements Loaders.css spinner
 
 ## Installation
 
-Just run `npm install angular2-loaders-css --save`
+- run `npm install angular2-loaders-css --save`
+- link [Loaders.css](https://github.com/ConnorAtherton/loaders.css) stylesheet to your document - you can find it in /node_modules/loaders.css/, e.g. add this in your html-document:
 
-Make sure you have [Loaders.css](https://github.com/ConnorAtherton/loaders.css) installed and its CSS is linked.
+```
+<link rel="stylesheet" href="node_modules/loaders.css/loaders.min.css">
+```
+or import it in app.scss, e.g.:
+```
+@import "node_modules/loaders.css/src/loaders";
+```
 
 
 ## Usage
