@@ -26,10 +26,33 @@ or import it in app.scss, e.g.:
 @import "node_modules/loaders.css/src/loaders";
 ```
 
+That should be enough if you use Webpack to bundle JavaScript.
+
+Otherwise you'll have to edit `systemjs.config.js` to set correct path, e.g.:
+
+```
+// below you can see an example of map and packages sections in systemjs.config.js
+
+// ...
+// map tells the System loader where to look for things
+var map = {
+    // ...
+    'angular2-loaders-css':       'node_modules/angular2-loaders-css',
+    // ...
+};
+// packages tells the System loader how to load when no filename and/or no extension
+var packages = {
+    // ...
+    'angular2-loaders-css':       { main: 'index.js', defaultExtension: 'js' },
+    // ...
+};
+
+// ...
+```
 
 ## Usage
 
-Import `LoadersCssComponent` component and use it as a directive, e.g.: 
+Import `LoadersCssComponent` component and use it as a directive where needed, e.g.: 
 
 ```
 import { Component } from '@angular/core';
@@ -43,6 +66,16 @@ import { LoadersCssComponent } from 'angular2-loaders-css';
     directives: [LoadersCssComponent]
 })
 export class HomeComponent {}
+```
+
+Important! If you don't see spinner and there are no errors in console - it can be because spinner's color is the same as the background's color - usually it's white.
+
+You can pass `loaderClass`-attribute and specify CSS class for a loader if you want to change loader's color, e.g.:
+
+```
+.my-loader {
+    background-color: #D32F2F;
+}
 ```
 
 Note that you have to use loader-attribute to choose a loader that'll be displayed, possible values are:
@@ -75,14 +108,6 @@ Note that you have to use loader-attribute to choose a loader that'll be display
 - pacman
 - ball-grid-beat
 - semi-circle-spin
-
-Also you can pass loaderClass-attribute and specify CSS class for a loader if you want to change loader's color, e.g.:
-
-```
-.my-loader {
-    background-color: #D32F2F;
-}
-```
 
 
 ## Feedback
