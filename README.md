@@ -78,6 +78,11 @@ Also you can pass loaderClass-attribute and specify CSS class for a loader if yo
 ```
 
 
+## Feedback
+
+Please [leave your feedback](https://github.com/moff/angular2-loaders-css/issues) if you have noticed any issues or have a feature request.
+
+
 ## License
 
 The repository code is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
