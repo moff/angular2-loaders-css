@@ -1,4 +1,4 @@
-import { NgModule, ModuleWithProviders } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { CommonModule }            from '@angular/common';
 import { LoadersCssComponent }    from './loaders-css.component';
 
