@@ -71,18 +71,16 @@ var packages = {
 
 ## Usage
 
-Import `LoadersCssComponent` and use it as a directive, e.g.:
+Just use `LoadersCssComponent` in a template, e.g.:
 
 ```
 import { Component } from '@angular/core';
-import { LoadersCssComponent } from 'angular2-loaders-css';
 
 @Component({
     template: `
         <h2>Home component header</h2>
         <loaders-css [loader]="'square-spin'" [loaderClass]="'my-loader'"></loaders-css>
-    `,
-    directives: [LoadersCssComponent]
+    `
 })
 export class HomeComponent {}
 ```
