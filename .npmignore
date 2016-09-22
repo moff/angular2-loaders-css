@@ -5,6 +5,8 @@ npm-debug.log
 # OS generated files
 Thumbs.db
 .DS_Store
+**/.DS_Store
+Desktop.ini
 
 # Ignored files
 *.ts
@@ -12,3 +14,21 @@ Thumbs.db
 typings
 typings.json
 tsconfig.json
+tsconfig.publish.json
+styles.css
+systemjs.config.js
+index.html
+compiled
+.npmignore
+
+# JetBrains
+.idea
+.project
+.settings
+.idea/*
+*.iml
+
+# Other
+nbproject
+manifest.mf
+build.xml

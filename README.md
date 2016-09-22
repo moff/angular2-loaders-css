@@ -4,7 +4,7 @@
 
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](http://opensource.org/licenses/MIT)
 
-This repository contains Angular 2 component that implements Loaders.css spinners.
+This repository contains Angular 2 module that implements Loaders.css spinners.
 
 <a href="https://connoratherton.com/loaders" target_='blank'>Check out the demo of Loaders.css</a>
 
@@ -22,8 +22,27 @@ This repository contains Angular 2 component that implements Loaders.css spinner
 <link rel="stylesheet" href="node_modules/loaders.css/loaders.min.css">
 ```
 or import it in app.scss, e.g.:
+
 ```
 @import "node_modules/loaders.css/src/loaders";
+```
+
+- import `LoadersCssModule` in your app's main module `app.module.ts`, e.g.:
+
+```
+// other imports
+// ...
+import { LoadersCssModule } from 'angular2-loaders-css';
+// ...
+
+@NgModule({
+    imports: [
+        // other imports
+        // ...
+        LoadersCssModule,
+        // ...
+    ]
+})
 ```
 
 That should be enough if you use Webpack to bundle JavaScript.
@@ -52,7 +71,7 @@ var packages = {
 
 ## Usage
 
-Import `LoadersCssComponent` component and use it as a directive where needed, e.g.: 
+Import `LoadersCssComponent` and use it as a directive, e.g.:
 
 ```
 import { Component } from '@angular/core';

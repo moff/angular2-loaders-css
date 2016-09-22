@@ -1,12 +1,30 @@
-# Node generated files
+nbproject
+manifest.mf
+build.xml
 node_modules
+typings
 npm-debug.log
-
-# OS generated files
-Thumbs.db
-.DS_Store
-
-# Ignored files
+coverage
 *.js
+!systemjs.config.js
+!karma.conf.js
+!karma-test-shim.js
 *.map
 *.d.ts
+!make.js
+!bundles/*.js
+
+# JetBrains
+.idea
+.project
+.settings
+.idea/*
+*.iml
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Mac
+**/.DS_Store
+.DS_Store

@@ -1,1 +1,1 @@
-export { LoadersCssComponent } from './src/loaders-css.component';
+export * from './module/module';
