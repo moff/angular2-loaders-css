@@ -90,7 +90,7 @@ Important! If you don't see spinner and there are no errors in console - it can 
 You can pass `loaderClass`-attribute and specify CSS class for a loader if you want to change loader's color, e.g.:
 
 ```
-.my-loader {
+.loader .my-loader {
     background-color: #D32F2F;
 }
 ```
