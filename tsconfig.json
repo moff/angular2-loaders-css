@@ -7,16 +7,12 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "removeComments": false,
-    "noImplicitAny": false,
-    "outDir": "./compiled"
+    "noImplicitAny": true,
+    "outDir": "./compiled",
+    "lib": ["es2015", "dom"]
   },
   "files": [
-    "typings/index.d.ts",
     "./app/main.ts",
     "./module/module.ts"
-  ],
-  "exclude": [
-    "node_modules",
-    "dist"
   ]
 }

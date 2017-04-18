@@ -7,18 +7,16 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "removeComments": false,
-    "noImplicitAny": false,
-    "declaration": true
+    "noImplicitAny": true,
+    "declaration": true,
+    "lib": ["es2015", "dom"]
   },
   "files": [
-    "typings/index.d.ts",
     "./module/module.ts",
     "./index.ts"
   ],
-  "exclude": [
-    "app",
-    "compiled",
-    "dist",
-    "node_modules"
-  ]
+  "angularCompilerOptions": {
+    "genDir": "aot",
+    "skipMetadataEmit": false
+  }
 }
